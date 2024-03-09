@@ -1,4 +1,7 @@
 body {
-  background-color: rgb(133, 33, 75);
+  background-color: rgb(100, 15, 5);
+}
+
+p {
   font-family: "Consolas";
 }
