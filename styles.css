@@ -19,3 +19,7 @@ h1 {
  grid-template-columns: 1fr 1fr 1fr;
  column-gap: 5px;
 }
+
+hr {
+  color: rgb(255, 235, 235);
+}
