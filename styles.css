@@ -13,7 +13,7 @@ h1 {
   font-weight: bold;
 }
 
-.container {
+.title {
  display: grid;
  align-items: center; 
  grid-template-columns: 1fr 1fr 1fr;
