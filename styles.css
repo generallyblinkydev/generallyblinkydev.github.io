@@ -6,3 +6,9 @@ p {
   font-family: "Consolas";
   color: rgb(255, 235, 235);
 }
+
+h1 {
+  font-family: "Consolas";
+  color: rgb(255, 235, 235);
+  font-weight: bold;
+}
