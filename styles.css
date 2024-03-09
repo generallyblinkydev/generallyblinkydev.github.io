@@ -1,1 +1,4 @@
-body {};
+body {
+  background-color: rgb(133, 33, 75);
+  font-family: "Consolas";
+}
