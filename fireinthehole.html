@@ -4,8 +4,22 @@
     <link rel="stylesheet" href="styleinthehole.css">
     <title>FIRE IN THE HOLE</title>
     <link rel="icon" type="image/x-icon" href="fireinthehole.png">
+    <script>
+      var audio = new Audio("fire-in-the-hole-geometry-dash.mp3");
+      
+      audio.oncanplaythrough = function(){
+      audio.play();
+      }
+      
+      audio.loop = true;
+      
+      audio.onended = function(){
+      audio.play();
+      }
+      
+    </script>
   </head>
   <body>
-    <button onclick="fireInTheClick()" class="center"><img src="fireinthehole.png" alt="fire in the hole!!"></button>
+    <button onclick="audio.play();" class="center"><img src="fireinthehole.png" alt="fire in the hole!!"></button>
   </body>
 </html>
