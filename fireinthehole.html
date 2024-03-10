@@ -5,7 +5,12 @@
     <title>FIRE IN THE HOLE</title>
     <link rel="icon" type="image/x-icon" href="fireinthehole.png">
     <script>
+      var firedInTheHole = 0;
+      
       function fireInTheClick() {
+        firedInTheHole += 1;
+        var text = document.getElementById("count");
+        text.innerHTML = "You have fired in the hole " + firedInTheHole + " times!";
         audio = new Audio("fire-in-the-hole-geometry-dash.mp3");
         
         audio.onended = function(){
@@ -19,5 +24,6 @@
   <body>
     <h1>FIRE IN THE HOLE</h1>
     <button style="height=200px; width=200px;" onclick="fireInTheClick();" class="center"><img style="height=200px; width=200px;" src="fireinthehole.png" alt="fire in the hole!!"></button>
+    <p id="count">You have fired in the hole 0 times!</p>
   </body>
 </html>
