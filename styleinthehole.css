@@ -5,12 +5,14 @@ body {
 p {
   font-family: "Consolas";
   color: rgb(0, 255, 0);
+  text-align: center;
 }
 
 h1 {
   font-family: "Consolas";
   color: rgb(0, 255, 0);
   font-weight: bold;
+  text-align: center;
 }
 
 .center {
