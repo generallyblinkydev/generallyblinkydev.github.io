@@ -5,10 +5,18 @@
     <title>FIRE IN THE HOLE</title>
     <link rel="icon" type="image/x-icon" href="fireinthehole.png">
     <script>
-      var audio = new Audio("fire-in-the-hole-geometry-dash.mp3");
+      function fireInTheClick() {
+        audio = new Audio("http://music.ogg");
+        
+        audio.onended = function(){
+          audio.remove();
+        }
+  
+        audio.play();
+      }
     </script>
   </head>
   <body>
-    <button onclick="audio.play();" class="center"><img src="fireinthehole.png" alt="fire in the hole!!"></button>
+    <button onclick="fireInTheClick();" class="center"><img src="fireinthehole.png" alt="fire in the hole!!"></button>
   </body>
 </html>
