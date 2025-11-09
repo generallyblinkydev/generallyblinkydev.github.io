@@ -3,6 +3,6 @@ window.addEventListener('load', function () {
     document.getElementById('test').innerHTML = document.getElementById('wiki-search').value
     fetch('/wikis/bloodloss/test-page.txt')
       .then(response => response.text())
-      .then(data => console.log(data));
+      .then(data => document.getElementById('page').innerHTML = data);
   };
 });
